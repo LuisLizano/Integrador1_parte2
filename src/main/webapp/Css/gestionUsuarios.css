@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.button {
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: #d3d3d3;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.button img {
+    width: 100px;
+    height: 100px;
+}
+
+.button p {
+    margin: 10px 0 0 0;
+    font-weight: 600;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 80%;
+    padding: 40px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 1rem; 
+}
+
+.input {
+    width: 80%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem; 
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: dodgerblue; 
+}
+
+.label__name {
+    position: absolute;
+    top: 20%;
+    left: 1.5rem; 
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: #fff;
+    padding: 0 .5rem;
+    transition: transform .2s, top .2s, font-size .2s, left .2s;
+    pointer-events: none; 
+}
+
+.input:focus + .label__name,
+.input:not(:placeholder-shown) + .label__name {
+    top: 0;
+    left: 1.5rem; 
+    transform: translateY(-50%) scale(.7);
+    font-size: 1.1rem;
+}
+
+.add-button-container {
+    grid-column: span 3; 
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem; 
+}
+
+.add-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center; 
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.add-button i {
+    margin-left: 5px; 
+}
+
+.edit-button {
+    background-color: #007BFF; /* Color azul para el botón de editar */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Espacio entre los botones */
+}
+
+.edit-button:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+}
+
+.edit-button i {
+    margin-left: 5px; 
+}
+
+.table-container {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f8f8;
+}

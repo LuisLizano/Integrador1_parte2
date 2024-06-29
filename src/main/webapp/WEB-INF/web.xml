@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>Validar</servlet-name>
+        <servlet-class>Controlador.Validar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controlCliente</servlet-name>
+        <servlet-class>Controlador.controlCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>controlAdministrador</servlet-name>
+        <servlet-class>Controlador.controlAdministrador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Validar</servlet-name>
+        <url-pattern>/Validar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controlCliente</servlet-name>
+        <url-pattern>/controlCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>controlAdministrador</servlet-name>
+        <url-pattern>/controlAdministrador</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

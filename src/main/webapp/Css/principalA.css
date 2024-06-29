@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    height: 100vh; 
+}
+
+.sidebar-left {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-left h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 50px; 
+}
+
+.sidebar-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-left ul li {
+    margin: 5px 0;
+}
+
+
+.sidebar-left ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-left ul li a:hover {
+    background-color: #495057;
+}
+
+.sidebar-left ul li ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.sidebar-left ul li ul.hidden {
+    display: none;
+}
+
+.main-content {
+    margin-left: 280px; 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.user-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 12px; 
+    text-align: right;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.user-bar p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.sidebar-right {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+}
+
+.dropdown .btn {
+    border: none;
+    color: black;
+}
+
+.dropdown .btn:hover {
+    background-color: #aaaaaa; /* O puedes usar #808080 para un gris específico */
+}
+
+.dropdown .dropdown-item:hover{
+    background-color: #aaaaaa;
+}
+
+
+iframe {
+    width: 100%;
+    height: calc(100vh - 80px); 
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: aquamarine;
+}
